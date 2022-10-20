@@ -1,0 +1,179 @@
+
+.ex-1-square:hover{
+    background-color: red;
+}
+
+.ex-1-square{
+    transition: all 3s linear;
+}
+
+.ex-2-square:active{
+    width: 100%;
+}
+
+.ex-2-square{
+    transition: all 3s linear;
+}
+
+.ex-3-square:hover{
+    border-radius: 50%;
+}
+
+.ex-3-square{
+    transition: all 3s linear;
+}
+
+.ex-4-square:hover{
+    filter: opacity(0);
+}
+
+.ex-4-square{
+    transition: all 3s linear;
+}
+
+.ex-5-square:hover{
+    transform: scale(200%);
+}
+
+.ex-5-square:active{
+    transform: scale(50%);
+}
+
+.ex-5-square{
+    transition: all 1s linear;
+}
+
+.ex-6-img:hover{
+    filter: grayscale(100%);
+}
+
+.ex-7-img:hover{
+    filter: sepia(50%);
+}
+
+.ex-7-img{
+    transition: all 3s linear;
+}
+
+.ex-8-img:hover{
+    filter: grayscale(60%);
+    filter: sepia(50%);
+    border-radius: 20%;
+}
+
+.ex-8-img{
+    transition: all 2s ease;
+}
+
+.ex-9-img:hover{
+    filter: grayscale(60%);
+    filter: sepia(50%);
+    border-radius: 15%;
+    scale: 150%;
+}
+
+.ex-9-img{
+    transition: all 2s ease;
+}
+
+.ex-10-icon{
+    animation-name: incircle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+@keyframes incircle{
+    0% {
+        rotate: 0deg;
+    }
+    100% {
+        rotate: 360deg;
+    }
+}
+
+.ex-11-icon:hover{
+    animation-name: almostincircle;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes almostincircle{
+    0% {
+        rotate: 0deg;
+    }
+    50% {
+        rotate: 320deg;
+    }
+    75%{
+        rotate: 320deg;
+    }
+    100% {
+        rotate: 0deg;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: slit-bottom 2s linear;
+}
+
+@keyframes slit-bottom{
+    0%{
+        right: 10%;
+    }
+    50%{
+        right: calc(100% - 60px);
+    }
+    100%{
+        right: 10%;
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: slit-top 2s linear;
+}
+
+@keyframes slit-top{
+    0%{
+        left: 10%;
+    }
+    50%{
+        left: calc(100% - 60px);
+    }
+    100%{
+        left: 10%;
+    }
+}
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: complete-top 2s linear;
+}
+
+@keyframes complete-top {
+    0%{
+        left: 10%;
+        top: -10px
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    50%{
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+75% {
+    left: 0;
+    top: 100%;
+    }
+90% {
+    left: -15px;
+    top: -10px;
+    }
+    100%{
+        left: 10%;
+        top: -10px
+    }
+}
